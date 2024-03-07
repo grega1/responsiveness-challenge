@@ -1,0 +1,119 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    justify-content: space-between;
+    
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col + .col {
+    margin-left: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+.second-part{
+    padding: 2rem 0;
+}
+.col:nth-child(1n){
+    width:60%;
+}
+.col:nth-child(2n){
+    width:40%;
+    background-color: #136C72;
+    align-itens:center;
+    text-align: center;
+    padding:0 3rem;
+}
+.col:nth-child(1n) h2{
+    color:#136C72;
+}
+.col:nth-child(1n) p{
+    color: #23424A;
+}
+.col:nth-child(2n) h2, .col:nth-child(2n) p{
+    color: #fff;
+}
+.col h2{
+    font-size:2rem;
+}
+.col p{
+    font-size:1.25rem;
+}
